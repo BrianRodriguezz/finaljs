@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "cantidad": 1,
+        "producto": "Remera ATHIX",
+        "img": "./img/remera negro.jpg",
+        "descripcion": "Remera deportiva color negro",
+        "precio": 12000
+    },
+    {
+        "id": 2,
+        "cantidad": 1,
+        "producto": "Remera ATHIX",
+        "img": "./img/remera celeste.jpg",
+        "descripcion": "Remera deportiva color celeste",
+        "precio": 12000
+    },
+    {
+        "id": 3,
+        "cantidad": 1,
+        "producto": "Remera ATHIX",
+        "img": "./img/remera amarillo.jpg",
+        "descripcion": "Remera deportiva color amarillo",
+        "precio": 12000
+    }, {
+        "id": 4,
+        "cantidad": 1,
+        "producto": "Short ATHIX",
+        "img": "./img/short.jpg",
+        "descripcion": "Short Oficial ATHIX negro",
+        "precio": 6000
+    },
+    {
+        "id": 5,
+        "cantidad": 1,
+        "producto": "Medias ATHIX",
+        "img": "./img/medias.png",
+        "descripcion": "todos los colores disponible",
+        "precio": 2000
+    }
+]
