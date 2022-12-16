@@ -2,6 +2,7 @@ const lista = document.querySelector("#productos")
 const verCarrito = document.querySelector("#imgCarrito")
 const modal = document.querySelector("#modalContainer")
 let btnCerrarSesion = document.querySelector("#cerrarSesion button")
+let clima_div = document.getElementById("clima-div");
 
 let carrito = JSON.parse(localStorage.getItem("carrito")) || []
 
@@ -183,3 +184,19 @@ btnCerrarSesion.addEventListener("click",()=> {
     localStorage.removeItem("carrito")
     location.href = "index.html"
 })
+
+//Fetch y clima
+const url = "https://api.openweathermap.org/data/2.5/weather?q=Buenos Aires&lang=es&units=metric&appid=a9e10258cf0e599a2cc1fdf9eaf61083"
+fetch(url)
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        if(data.main > "24"){
+            clima_div.style.backgroundColor = "orange";
+            clima_div.innerHTML = `<h1> Dia caluroso 🌡 </h1>`;
+        } 
+        else{
+            clima_div.style.backgroundColor = "blue";
+            clima_div.innerHTML=  `<h1> Dia fresco ❄ </h1>`;
+        }
+    });

@@ -126,3 +126,10 @@ margin-top: 20px;
 #cerrarSesion {
     text-align: end;
 }
+
+.clima-div{
+    background-color:#e9ff70;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+  }
